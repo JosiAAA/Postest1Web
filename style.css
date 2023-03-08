@@ -1,0 +1,430 @@
+
+/* css home.html */
+* {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ #halaman_home {
+   max-width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: left; */
+    background-position: center;
+  }
+  #header_home {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li a {
+    color: #580909;
+    background-color: #00000081;
+    font-size: 30px;
+    font-family: 'fontbaru', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  nav ul li a:hover {
+    background-color: #36383a70;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  .intro {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .intro h1 {
+    margin-top: 0;
+    font-size: 3em;
+   
+  }
+  
+  .play-btn {
+    background-color: #00000081;
+    font-family: 'fontbaru', sans-serif;
+    background: linear-gradient(to right, #5e0606, #a72222);
+    
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .play-btn:hover {
+    background-color: #36383a70;
+    color: #fff;
+  }
+  .konten {
+   
+    margin-bottom: 50px;
+}
+.konten h2 {
+ font-family:'Times New Roman', Times, serif;
+ text-shadow: 3px 3px 6px black;
+font-size: 2em;
+margin-bottom: 20px;
+color:white;
+
+
+}
+/* tambahkan animasi untuk muncul dari bawah ke atas */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* atur durasi dan jenis animasi */
+.animate__animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* gunakan animasi fadeInUp untuk elemen h2 */
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+
+.konten ul {
+list-style: none;
+font-size: 1.2em;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+.konten ul li {
+    font-family: "";
+    color: white;
+    text-shadow: 3px 3px 6px black;
+
+}
+
+main .intro h1
+{
+    margin-top: 0
+    ;
+    font-family: 'fontbaru', sans-serif;
+    text-shadow: 2px 2px 0 #6d0505, 3px 3px 0 #bb4c4c, 4px 4px 0 #501d1d;
+
+    /* color: rgba(126, 17, 17, 0.986); */
+    background: linear-gradient(to right, #000000, #000000,#020000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background-color: black; */
+    padding-right: -0px;
+  }
+
+  @font-face {
+    font-family: 'fontbaru';
+    src: url('KungFuMaster-K7vrX\ .otf');
+       
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .text-timbul {
+    position: relative;
+    animation: timbul 0.8s forwards;
+    opacity: 0;
+  }
+
+  @keyframes timbul {
+    to {
+      transform: translateY(-20px);
+      opacity: 1;
+    }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* sesuaikan dengan tinggi footer Anda */
+    background-color: #111111; /* sesuaikan dengan warna background footer Anda */
+    color: #fff; /* sesuaikan dengan warna teks footer Anda */
+    text-align: center;
+    padding-top: 10px;
+  }
+ 
+  footer p{
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow:3px 3px 6px #000000;
+    color:white;
+  }
+  .kartu {
+    display: flex;
+    width: 300px;
+    padding-left: 0%;
+  }
+ 
+
+
+.kartu h2 {
+
+font-size: 10px;
+margin-bottom: 20px;
+}
+.kartu img {
+width: 33.33%;
+float: left;
+margin-bottom: 20px;
+}
+
+/* end of line  */
+
+/* halaman login */
+#halaman_login{
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    
+  }
+  label {
+    text-shadow: 5px 5px 6px #000000;
+    font-family:'fontbaru', sans-serif ;
+    letter-spacing: 2px;
+    color:white;
+   
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="password"] {
+    font-family: 'fontbaru', sans-serif;
+   
+    letter-spacing: 2px;
+    width: 100%;
+    padding: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"] {
+    font-family: 'fontbaru', sans-serif;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-shadow: 2px 2px 5px #333;
+    background-color: #5e0606;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #fff;
+    color: #000000;
+  }
+ 
+  #header_login {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  #error-message {
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    display: none;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #error-message.show {
+    display: block;
+  }
+  
+  #login-form {
+    margin-top: 10px;
+  }
+  
+  #login-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #5e0606;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #login-form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #5e0606;
+  }
+/* halaman game */
+#halaman_game{
+   
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  #header_game {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    width: 290px;
+    height: 390px;
+    border: 10px solid rgba(238, 255, 0, 0);
+    overflow: hidden;
+}
+.slideshow-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+.slideshow-container img.active {
+    opacity: 1;
+}
+#halaman_tentang{
+   
+    max-width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.3)),url(./bgmarvel.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  #header_tentang {
+    margin-bottom: 0;
+    background-color: #000000;
+    height: 70px;
+    padding: 10px 20px;
+  }
+      main .div_tentang h1{
+        text-shadow: 3px 3px 6px black;
+        padding-left: 53px;
+        font-family: 'fontbaru', sans-serif;
+        letter-spacing: 2px;
+    color: rgb(233, 223, 223);
+    text-align: center;
+  }
+  main .div_tentang h2{
+    text-align: center;
+    text-shadow: 3px 3px 6px black;
+    font-size: 8;
+    color: rgb(175, 175, 175);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  nav ul li a #login{
+    padding-right: 50px;
+  }
+  .gacha-container {
+    display: grid;
+    grid-template-areas:
+      "notification"
+      "button";
+    grid-template-rows: auto 1fr;
+    height: 30vh;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .notification {
+    font-family: 'fontbaru', sans-serif;
+    text-align: center;
+    grid-area: notification;
+    position: relative;
+    top: -50px; /* atur posisi notifikasi di atas button */
+    background-color: #000000;
+    border: 1px solid #000;
+    padding: 10px;
+    z-index: 999;
+    color: white;
+    letter-spacing: 3px;
+  }
+  
+  .gacha-button {
+    grid-area: button;
+    background-color: rgb(100, 2, 2);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'fontbaru', sans-serif;
+    letter-spacing: 3px;
+  }
+  
+  .gacha-button:hover{
+    background-color: white;
+    color: black;
+  }
+  
